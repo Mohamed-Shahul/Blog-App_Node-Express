@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+        body{
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body>div:nth-child(2){
+            padding: 10px;
+            min-height: 200px;
+        }
+
+        nav{
+            width: 100%;
+            background-color: purple;
+        }
+        nav>div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        nav>div div{
+            width: 100%;
+            display: flex;
+            font-size: 20px;
+        }
+        nav>div div a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav>div div a:hover{
+            color: silver;
+        }        
+        nav>div div:nth-child(2){
+            justify-content: space-evenly;
+        }
+
+        .formDiv{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .formDiv form{
+            width: 300px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .formDiv form div {
+            display: flex;
+            flex-direction: column;
+        }
+        .formDiv form div input,textarea{
+            padding: 10px;
+        }
+        .formDiv form div button{
+            border: none;
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .formDiv form div button:hover{
+          
+            background-color: darkgreen;
+        }
+        .blogs a{
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .detailsDiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+        }
+        .detailsDiv > div:nth-child(2){
+            border-left: 5px solid red;
+            margin-top: 10px;
+        }
+        .detailsDiv > div:nth-child(2):hover{
+            background-color: wheat;
+        }
+        .detailsDiv > div:nth-child(2) ul li{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+        
+        .delete{
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
+        .delete:hover{
+            background-color: darkred;
+            cursor: pointer;
+        }
+
+        .blogs{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            gap: 10px;
+        }
+        .blogs > div:nth-child(2) ul{
+            margin: 10px 0px;
+        }
+        .blog-item {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 15px;
+            border-left: 5px solid red;
+            margin-top: 10px;
+        }
+        .blog-item:hover{
+            background-color: wheat;
+        }
+
+
+
+        .tableDiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        table th,td{
+            border: 3px solid;
+            padding: 10px;
+        }
+        table tr td:nth-child(1){
+            font-weight: bold;
+        }
+
+
+
+
+
+
+
+
+
+
+        footer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            color: grey;
+        }

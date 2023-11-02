@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/header.ejs') %>
+
+<body>
+    <%- include('../partials/nav.ejs') %>
+
+    <div class="blogs">
+        <div>
+            <h1>All Blogs</h1>
+        </div>
+        <div>
+            <ul>
+                <% if(blogs.length > 0){ %>
+                    <% blogs.map((blog) => { %>
+                        <a href="<%= blog._id %>">
+                            <li class="blog-item"> <!-- Apply a CSS class to each blog item -->
+                                <div>
+                                    <h3>
+                                        <%= blog.title %>
+                                    </h3>
+                                    <p>
+                                        <%= blog.body %>
+                                    </p>
+                                </div>
+                            </li>
+                        </a>
+                    <% }) %>
+                <% } else { %>
+                    <div>
+                        <h1>no Blogs</h1>
+                    </div>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>
